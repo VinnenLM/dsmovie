@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dsmovie
+    runtime: docker
+    plan: free
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeploy: true
